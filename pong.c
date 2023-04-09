@@ -73,12 +73,12 @@ void movePaddle(struct Paddle* paddle, enum Direction direction) {
 
     switch(direction) {
         case UP:
-            if (paddle->y > 0) {
+            if (paddle->y > 3) {
                 paddle->y--;
             }
             break;
         case DOWN:
-            if (paddle->y+PADDLE_HEIGHT < HEIGHT) {
+            if (paddle->y+PADDLE_HEIGHT < HEIGHT-1) {
                 paddle->y++;
             }
             break;
